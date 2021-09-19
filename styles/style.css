@@ -46,7 +46,7 @@ section {
 }
 #toTop{
     position: fixed;
-    bottom: 30px;
+    bottom: 10px;
     right: 30px;
     width: 50px;
     height: 50px;
@@ -55,8 +55,14 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transition: all .4s ease-in-out;
 }
 #toTop svg{
     color: #000;
     font-size: 30px;
+}
+#toTop.active{
+    opacity: 1;
+    bottom: 30px;
 }
